@@ -11,4 +11,10 @@ public class Cliente : Empleado
     {
         this.MostrarDatos();
     }
+
+    public override void MostrarDatos()
+    {
+
+        System.Console.WriteLine("Yo soy la clase Cliente");
+    }
 }

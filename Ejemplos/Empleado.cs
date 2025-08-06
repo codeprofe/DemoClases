@@ -10,4 +10,9 @@ public class Empleado : Persona
     {
         this.Departamento = nombredepa;
     }
+
+    public override void Saludar()
+    {
+        throw new NotImplementedException();
+    }
 }

@@ -1,17 +1,20 @@
 namespace Democlases.Ejemplos;
 
-public class Persona
+public abstract class Persona
 {
-    public string Nombre { get; set; }
-    public string Apellido { get; set; }
+    public string Nombre { get; set; } = string.Empty;
+    public string Apellido { get; set; } = string.Empty;
 
-    public string Cedula { get; set; }
+    public string Cedula { get; set; } = string.Empty;
 
-    public void MostrarDatos()
+    public virtual void MostrarDatos()
     {
+        Console.WriteLine("Yo soy la clase padre");
         Console.WriteLine(this.Nombre);
         Console.WriteLine(this.Apellido);
         Console.WriteLine(this.Cedula);
-     }
+    }
+
+    public abstract void Saludar();
 
 }
